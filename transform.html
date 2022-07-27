@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+
+    <style>
+
+        *{margin: 0; padding: 0;}
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+            margin: 100px auto;
+            
+            transition-duration: 0.5s;
+        }
+
+        .box:hover{
+            
+            /* *transform: 엘리먼트를 변형할 때 사용 */
+
+            /* transform: scale(0.5); */
+            /* =>엘리먼트의 스케일(크기값)을 배수로 늘리거나 줄여줌
+            =>X,Y를 이용하여 가로, 세로 값을 따로 정의 할 수도 있음 */
+
+            /* transform: rotateZ(360deg); */
+            /* =>엘리먼트의 회전
+            =>일번적인 회전은 Z축을 사용함 */
+
+            /* transform: translate(100px, 100px); */
+            /* =>포지션 없이 위치를 이동할 수 있음
+            =>X,Y축을 따로 적용할 수도 있으며, translate만 사용하면 translate(X축, Y축) */
+
+            /* transform: skewY(-45deg); */
+            /* =>오브젝트를 기울일 때 사용 */
+
+            transform: rotateZ(360deg) scale(0.5);
+            /* =>트랜스폼에 여러 값을 적용하고 싶을 땐 띄어쓰기로 구분하여 작성할 수 있음 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

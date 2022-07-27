@@ -1,0 +1,66 @@
+
+/* *반응형
+=>디바이스 사이즈에 따라 원하는 디자인이 나오도록 만들어 줌
+
+-PC: 1920 ~ 1024
+-Tablet: 1023 ~ 760
+-Mobile: 759 ~ 320 */
+
+/* *미디어쿼리
+=>반응형 작업 시 사용
+@media screen and (max-width:값px) and(min-width:값px) {
+    선택자{
+        속성: 속성값;
+    }
+    ....
+} */
+
+*{margin: 0; padding: 0;}
+
+div{
+    height: 200px;
+    border: 10px solid black;
+    box-sizing: border-box;
+    font-size: 50px;
+    text-align: center;
+}
+
+.pc{
+    width: 100%;
+}
+
+@media screen and (min-width:1024px) {
+    .pc{
+        background-color: teal;
+    }
+}
+
+
+
+.tab{
+    width: 1023px
+}
+
+@media screen and (max-width:1023px) and (min-width:760px) {
+    .tab{
+        width: 100%;
+        height: 300px;
+        border-color: salmon;
+    }
+}
+
+
+
+
+.mo{
+    width: 759px;
+}
+
+@media screen and (max-width:759px) {
+    .mo{
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+        background-color: teal;
+    }
+}
